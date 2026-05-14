@@ -26,7 +26,7 @@ Se refiere a las características actuales de JavaScript que facilitan un códig
 ----
 
 ## Objetivo
-Completar los 20 ejercicios de código JavaScript (ES6+) rellenando los huecos (`________`) para que cada archivo se ejecute sin errores y produzca la salida esperada.
+Completar los 20 ejercicios de código JavaScript (ES6+) rellenando los espacios (`________`) para que cada archivo se ejecute sin errores y produzca la salida esperada.
 
 ## Requisitos
 - Node.js v18 o superior instalado en su computadora.
@@ -56,7 +56,7 @@ cd evaluacion-js-moderno
 ### 4. Completar los ejercicios
 - Abran el proyecto en su editor de código.
 - Cada archivo `ej01.js`, `ej02.js` … `ej20.js` contiene un fragmento de código con uno o varios `________`.
-- **Solo deben rellenar los huecos**, sin modificar el resto del código.
+- **Solo deben rellenar los espacios**, sin modificar el resto del código.
 
 ### 5. Probar cada solución
 - En la terminal, ejecuten cada archivo con Node.js:
