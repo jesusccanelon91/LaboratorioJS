@@ -11,9 +11,9 @@
 ```javascript
 // ==========================================
 // Evaluación en Pareja
-// Estudiante 1: ________
-// Estudiante 2: ________
-// Fecha: ________
+// Estudiante 1: Jesus Canelon
+// Estudiante 2: Kevin Torrealba
+// Fecha: 14/05/2026
 // 
 // ==========================================
 ```
@@ -25,14 +25,14 @@
 // Concepto: let y const respetan el bloque; const impide reasignación, let la permite.
 // Completa con let o const según corresponda para obtener la salida indicada.
 
-_____ x = 10;
+let x = 10;
 if (true) {
-    _____ x = 20;          // declara una nueva variable en este bloque
+    let x = 20;          // declara una nueva variable en este bloque
     console.log(x);        // 20
 }
 console.log(x);            // 10
 
-_____ obj = { valor: 5 };
+const obj = { valor: 5 };
 obj.valor = 8;             // mutación permitida
 // obj = {};               // Error si la palabra clave es correcta
 console.log(obj.valor);    // 8
@@ -45,11 +45,11 @@ const persona = { nombre: "Ada", edad: 25 };
 persona.edad = 26;                 // mutación válida
 
 // Completa para crear una copia con una propiedad adicional, sin alterar el original:
-const actualizado = { ...________, activo: true };
+const actualizado = { persona, activo: true };
 console.log(actualizado); // { nombre: "Ada", edad: 26, activo: true }
 
 // Ahora completa para mostrar la edad del objeto original:
-console.log(________);   // 26
+console.log(persona.edad);   // 26
 ```
 
 ### Ejercicio 3 – Parámetros por defecto y retorno de objeto literal
@@ -57,8 +57,8 @@ console.log(________);   // 26
 // Concepto: Los parámetros pueden tener valores por defecto.
 // Para devolver un objeto desde una función se construye con { ... }.
 const crearLibro = (titulo, autor = "Anónimo", año = new Date().getFullYear()) => {
-    return ________;
-};
+    return { titulo, autor, año };
+};  
 
 console.log(crearLibro("El Principito", "Saint-Exupéry", 1943));
 // { titulo: "El Principito", autor: "Saint-Exupéry", año: 1943 }
@@ -70,7 +70,7 @@ console.log(crearLibro("1984"));
 ### Ejercicio 4 – Rest operator: agrupar en una función variádica
 ```javascript
 // Concepto: ...rest captura argumentos sobrantes en un array real.
-function generarInforme(categoria, ...________) {
+function generarInforme(categoria, items) {
     return `Informe de ${categoria}: ${items.join(" – ")}`;
 }
 console.log(generarInforme("Ventas", "Enero", "Febrero", "Marzo"));
